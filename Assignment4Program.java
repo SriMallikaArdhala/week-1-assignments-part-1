@@ -5,8 +5,7 @@ public class Assignment4Program {
         Scanner sc = new Scanner(System.in);
         out.println("Enter Year: ");
         var year = sc.nextInt();
-        String result = (year%400==0 || year%4==0 && year%100!=0) ? " is a leap year." :" is not a leap year.";
-        out.println(result);
+        out.println((year%400==0) || ((year%4==0) && (year%100!=0)) ? year + " is a leap year." : year +" is not a leap year." );
 
     }
 }
