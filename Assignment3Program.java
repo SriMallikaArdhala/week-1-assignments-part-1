@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import static java.lang.System.out;
+public class Assignment3Program {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the marks of student: ");
+        int marks=sc.nextInt();
+        if(marks<0 ||marks>100){
+            System.out.println("Invalid input");
+        }
+        else if(marks>=90){
+            System.out.println("You have got grade A");
+        }
+        else if(marks>=80){
+            System.out.println("You have got grade B");
+        }
+        else if(marks>=70){
+            System.out.println("You have got grade C");
+        }
+        else if(marks >= 60 ){
+            System.out.println("You have got grade D");
+        }
+        else{
+            System.out.println("Fail");
+        }
+    }
+
+}
