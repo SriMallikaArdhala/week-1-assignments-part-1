@@ -14,8 +14,12 @@ public class Assignment5Program {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter day value : ");
         int dayValue=sc.nextInt();
-        Day day= Day.values()[dayValue-1];
-        System.out.println(day);
+        if(dayValue<1 || dayValue >7)
+            System.out.println("Invalid day number");
+        else {
+            Day day = Day.values()[dayValue - 1];
+            System.out.println(day);
+        }
 
     }
 
